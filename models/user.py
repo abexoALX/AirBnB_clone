@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-'''
-    Implementation of the User class which inherits from BaseModel
-'''
+""" User class, inherits from BaseModel """
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    '''
-        Definition of user class
-    '''
+    """ User class, inherits from BaseModel """
     email = ""
     password = ""
-    first_name= ""
-    last_name= ""
+    first_name = ""
+    last_name = ""
 
+    def __init__(self, *args, **kwargs):
+        """ User initializer """
+        super().__init__(*args, **kwargs)
