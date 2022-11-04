@@ -19,6 +19,9 @@ border-radius: 4px;
 position:absolute;
 vertical-align:middle;
 border: 0;
+opacity: 1;
+}
 
-
+.buttn :hover {
+    opacity: 1
 }
